@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@rollup/plugin-typescript": "^5.0.2",
@@ -34,7 +33,7 @@
     "typescript-plugin-css-modules": "^2.4.0"
   },
   "scripts": {
-    "build": "rollup -c && parcel build demo/index.html -d demo/public --public-url ./",
+    "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist && parcel build demo/index.html -d demo/public --public-url ./",
     "start": "parcel demo/index.html",
     "pub": "npm publish"
   },
