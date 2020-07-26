@@ -1,8 +1,9 @@
 {
   "name": "@alexkreidler/react-resize-panel",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "types": "dist/main.d.ts",
   "dependencies": {
     "cash-dom": "^8.0.0",
     "classnames": "^2.2.6",
