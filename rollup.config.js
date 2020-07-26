@@ -1,5 +1,5 @@
 import pkg from "./package.json";
-import postcss from "rollup-plugin-postcss-modules";
+import postcss from "rollup-plugin-postcss";
 import typescript from "@rollup/plugin-typescript";
 
 export default [
